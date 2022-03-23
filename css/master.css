@@ -1,0 +1,248 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Lobster&family=Smooch+Sans:wght@200&display=swap');
+/*
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Lobster', cursive;
+
+font-family: 'Smooch Sans', sans-serif;
+*/
+/*Balise*/
+body {
+  background-color: #c7bdc0;
+font-family: 'Smooch Sans', sans-serif;
+font-size: 1.2em;
+}
+h1 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 2em;
+}
+h2 {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1.5em;
+}
+h3 {
+  font-size: 1.4em;
+}
+/*Class des h*/
+.titreCV {
+  font-size: 1.6em;
+  text-align: center;
+}
+/*Fin class des h*/
+li strong {
+  margin-right: 0.2em;
+}
+/*Flex classoque*/
+.ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+.colonne  input {
+  margin-bottom: 0.5em;
+}
+/*Navigation interne*/
+header {
+  padding-top: 1em;
+  text-align: center;
+}
+  .navigation:nth-child(1n) {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.navigation li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+li a {
+    text-decoration: none;
+    color: #38302C;
+    font-family: 'Lobster', cursive;
+}
+.boutonNav {
+  border: 1px solid #f9f2e2;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  color: #665850;
+  padding: 0.25em;
+  font-size: 1.2em;
+  background-color: #FFF8D2;
+  transition: box-shadow 0.5s;
+}
+
+.boutonNav:hover {
+  transition: box-shadow 0.5s, background-color 0.25s;
+  background-color: #FFD891;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.17) 0px 3px 3px,
+  rgba(0, 0, 0, 0.09) 0px 3px 3px;
+}
+.boutonNavAdmin {
+  border: 1px solid #f9f2e2;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  color: #665850;
+  padding: 0.25em;
+  font-size: 1.2em;
+  background-color: #E76E1A;
+  transition: box-shadow 0.5s;
+}
+.boutonNavAdmin:hover {
+  transition: box-shadow 0.5s, background-color 0.25s;
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.12) 0px 3px 3px,
+  rgba(0, 0, 0, 0.17) 0px 3px 3px,
+  rgba(0, 0, 0, 0.09) 0px 3px 3px;
+}
+/* Formulaire */
+
+input, textarea, select, label {
+  font-size: 1.1em;
+}
+input, textarea, select {
+    background-color: #FFF8D2;
+}
+/*Effet de paralaxe*/
+.parallax-effect {
+  background-image: url("../images/backGroundPortFolio.webp");
+  min-height: 15em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.style {
+  height: auto;
+  background: #c7bdc0;
+  text-align: center;
+  min-height:600px;
+}
+/*Fin effet de paralaxe*/
+/*Presentation*/
+.listeClassique {
+  list-style: none;
+  font-size: 1.3em;
+}
+.presentation {
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+}
+
+/*footer*/
+.bottonPosition {
+  font-weight: 600;
+  font-size: 1.2em;
+  background-color: rgba(126, 161, 196, 0.3);
+  width: auto;
+  color: #FEFDEF;
+  padding: 0.25em;
+}
+/*Fin footer*/
+/*Grid Section 1 CV*/
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "infoPerso technique"
+    "skill experiences"
+    "softskill formations";
+}
+/*Colonne gauche*/
+.infoPerso {
+  grid-area: infoPerso;
+ }
+.skill {
+  grid-area: skill;
+ }
+.softskill {
+  grid-area: softskill;
+  display: none;
+ }
+/*Colonne droite*/
+.technique {
+  grid-area: technique;
+  border: 1px solid #f9f2e2;
+  border-radius: 4px;
+ }
+.experiences {
+  grid-area: experiences;
+  text-align: left;
+ }
+.formations {
+  grid-area: formations;
+  text-align: left;
+ }
+/*Section 1 CV Fin*/
+/*=Breakpoint=*/
+@media only screen and (max-width: 900px) {
+  /*Paysage*/
+
+}
+@media only screen and (max-width: 500px) {
+  /*portrait*/
+  /*=Breakpoint=*/
+  @media only screen and (max-width: 900px) {
+    /*Paysage*/
+
+  }
+  @media only screen and (max-width: 500px) {
+    /*portrait*/
+    .navigation:nth-child(1n) {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+    .navigation li {
+      margin-bottom: 1.2em;
+    }
+    .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .infoPerso {
+    text-align: center;
+  }
+  .presentation {
+    text-align: initial;
+    padding-left: 0em;
+    padding-right: 0em;
+    font-size: 1.2em;
+  }
+  .listeClassique li a {
+    font-size: 0.8em;
+  }
+  }
