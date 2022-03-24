@@ -2,6 +2,7 @@
 $title = 'Administration du portfolio de monsieur Christophe Calmes';
 $title2 = 'Interface d\'administration';
 $description = 'web, vueJS, php, POO, recherche, emploi, CMS, Wordpress, Micro-blog, administration, administrable';
+
  ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">

@@ -118,12 +118,16 @@ li a {
   rgba(0, 0, 0, 0.09) 0px 3px 3px;
 }
 /* Formulaire */
+select, input {
+  border-radius: 5px;
+}
 
 input, textarea, select, label {
   font-size: 1.1em;
 }
 input, textarea, select {
     background-color: #FFF8D2;
+    margin-bottom: 0.25em;
 }
 /*Effet de paralaxe*/
 .parallax-effect {
@@ -140,6 +144,8 @@ input, textarea, select {
   background: #c7bdc0;
   text-align: center;
   min-height:600px;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 /*Fin effet de paralaxe*/
 /*Presentation*/

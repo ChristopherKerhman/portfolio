@@ -1,6 +1,6 @@
 <?php
 class AffichagePage {
-  private $idNav;
+  public $idNav;
   public function __construct ($idNav) {
     $this->idNav = $idNav;
   }

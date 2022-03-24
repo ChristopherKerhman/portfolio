@@ -1,5 +1,5 @@
 <h3>Ajouter la présentation</h3>
- <form class="colonne" action="" method="post">
+ <form class="colonne" action="RCUD/Create/addArticle.php" method="post">
    <label for="titreMenu">Titre du nouveau menu</label>
      <input id="titreMenu" type="text" name="titreMenu" required>
  <div>
@@ -17,6 +17,5 @@
  </div>
    <label for="texte">Votre présentation / Accepte les balises HTML</label>
            <textarea id="texte" name="texte" rows="20" cols="160" required></textarea>
-
-   <button class="boutonNav" type="submit" name="button" value="<?=$idNav?>">Enregistrer</button>
+   <button class="boutonNav" type="submit" name="button" value="<?=$this->idNav?>">Enregistrer</button>
  </form>

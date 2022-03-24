@@ -16,6 +16,7 @@ $menu = new PrintMenuNav();
     $dataMenu = $menu->triMenu(0);
     $menu-> affichageMenu ($dataMenu);
   }
+  if(isset($_GET['message'])) {echo filter($_GET['message']);}
  ?>
 
 </header>
