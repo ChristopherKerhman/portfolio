@@ -24,6 +24,21 @@ font-size: 1.5em;
 h3 {
   font-size: 1.4em;
 }
+article {
+display: flex;
+justify-content: center;
+}
+table {
+  text-align: left;
+}
+th {
+  text-align: center;
+  border: 1px black solid;
+}
+td {
+  padding: 0.5em;
+
+}
 /*Class des h*/
 .titreCV {
   font-size: 1.6em;

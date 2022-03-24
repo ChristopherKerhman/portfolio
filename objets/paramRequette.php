@@ -21,4 +21,15 @@ class Preparation {
       array_push($prepare, ['prep' => ':idAdmin', 'variable' => $_SESSION['idAdmin']]);
       return $prepare;
   }
+  public function creationPrepIdUserText ($data) {
+    foreach ($data as $key => $value) {
+      $prepare = array();
+      foreach ($data as $key => $value) {
+        $value = filterTexte($value);
+        array_push($prepare, ['prep' => ':'.$key, 'variable' => $value]);
+      }
+    }
+      array_push($prepare, ['prep' => ':idAdmin', 'variable' => $_SESSION['idAdmin']]);
+      return $prepare;
+  }
 }

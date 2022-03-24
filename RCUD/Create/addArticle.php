@@ -10,7 +10,7 @@ if ($ok == 0) {
   // Préparation de la requette
   $sql = "INSERT INTO `presentation`(`titreMenu`, `titre`, `adresse`, `texte`, `id_Auteur` ) VALUES ( :titreMenu, :titre, :adresse, :texte, :idAdmin)";
   $requette = new Preparation();
-  $param = $requette->creationPrepIdUser ($_POST);
+  $param = $requette->creationPrepIdUserText ($_POST);
   //Insertion dans la DB
   $recordToken = new CurDB($sql, $param);
   $recordToken->actionDB();
