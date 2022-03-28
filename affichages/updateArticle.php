@@ -6,5 +6,5 @@ $dataTraiter = $liste->liste();
 
  ?>
 <article>
-  <?php $liste->printListe($dataTraiter); ?>
+  <?php $liste->printListe($dataTraiter, $this->idNav); ?>
 </article>

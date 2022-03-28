@@ -12,4 +12,13 @@ class GetPresentation {
     $readListe =  new readDB($sql, $param);
     return $readListe->read();
   }
+  public function oneArticle($id) {
+    $sql = "SELECT `idPresentation`, `titreMenu`, `titre`, `texte`, `adresse`
+    FROM `presentation`
+    WHERE `idPresentation` = :idPresentation AND `valide` = 1";
+    $param = [['prep'=>':idPresentation', 'variable'=>$id]];
+    $readArticle = new readDB($sql, $param);
+    return $readArticle->read();
+
+  }
 }

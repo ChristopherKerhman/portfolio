@@ -174,7 +174,12 @@ input, textarea, select {
   padding-right: 1em;
   font-size: 1.2em;
 }
-
+.listeCentrale {
+  list-style: none;
+}
+.listeCentrale li {
+  margin-bottom: 1em;
+}
 /*footer*/
 .bottonPosition {
   font-weight: 600;

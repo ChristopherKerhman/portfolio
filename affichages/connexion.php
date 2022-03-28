@@ -1,6 +1,6 @@
-<article>
+<article class="colonne">
   <h3>Connexion</h3>
-    <form class="colonne" action="RCUD/Read/connexion.php" method="post">
+    <form action="RCUD/Read/connexion.php" method="post">
       <label for="login">Login</label>
       <input type="text" name="login" required>
       <label for="mdp">Mot de passe</label>

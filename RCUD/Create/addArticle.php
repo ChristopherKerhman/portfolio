@@ -14,7 +14,7 @@ if ($ok == 0) {
   //Insertion dans la DB
   $recordToken = new CurDB($sql, $param);
   $recordToken->actionDB();
-  header('location:../../index.php?message=Texte enregistré.');
+  header('location:../../index.php?idNav=14&message=Texte enregistré.');
 } else {
   header('location:../../index.php?message=Un champs est vide.');
 }
@@ -22,5 +22,3 @@ if ($ok == 0) {
 } else {
     header('location:../../index.php?message=Il y a comme un lézard numérique.');
 }
-
- ?>
