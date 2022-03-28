@@ -180,6 +180,9 @@ input, textarea, select {
 .listeCentrale li {
   margin-bottom: 1em;
 }
+.welcome {
+  display: block;
+}
 /*footer*/
 .bottonPosition {
   font-weight: 600;

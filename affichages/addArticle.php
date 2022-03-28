@@ -1,3 +1,4 @@
+<?php include 'securite/checkSecurite.php'; ?>
 <h3>Ajouter la présentation</h3>
  <form class="colonne" action="RCUD/Create/addArticle.php" method="post">
    <label for="titreMenu">Titre du nouveau menu</label>

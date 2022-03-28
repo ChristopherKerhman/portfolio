@@ -14,6 +14,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
       $_SESSION['idAdmin'] = $dataTraiter[0]['idAdmin'];
       $_SESSION['User'] = $dataTraiter[0]['login'];
       $_SESSION['admin'] = true;
+      $_SESSION['role'] = $dataTraiter[0]['valide'];
       $_SESSION['connexionToken'] = $token;
       //Enregistrement du token de connexion unique
       $update = "UPDATE `administration` SET `token`= :token WHERE `idAdmin` = :idAdmin";
