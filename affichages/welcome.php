@@ -1,4 +1,4 @@
 <article class="welcome">
-  <h3>Bienvenu sur l'interface d'administration</h3>
-  <p>Vous êtes actuellement, sur l'interface d'administration du portfolio de Monsieur Calmes.</p>
+  <h3>Bienvenu sur mon portfolio</h3>
+  <p>Vous trouverez ici, les éléments pour estimer mes capacités à créer un site web.</p>
 </article>

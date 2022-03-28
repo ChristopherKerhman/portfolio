@@ -1,6 +1,6 @@
 <?php
-$title = 'Administration du portfolio de monsieur Christophe Calmes';
-$title2 = 'Interface d\'administration';
+$title = 'Portfolio de monsieur Christophe Calmes';
+$title2 = 'Mes projet web en ligne';
 $description = 'web, vueJS, php, POO, recherche, emploi, CMS, Wordpress, Micro-blog, administration, administrable';
 
  ?>

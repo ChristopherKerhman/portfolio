@@ -7,4 +7,11 @@ class GetMenuNav {
     $data = $read->read();
     return $data;
   }
+  public function triPresentation() {
+    $sql = "SELECT `idPresentation`, `titreMenu` FROM `presentation` WHERE `valide` = 1 ORDER BY `titreMenu` ";
+    $param = [];
+    $read = new readDB($sql, $param);
+    $data = $read->read();
+    return $data;
+  }
 }
