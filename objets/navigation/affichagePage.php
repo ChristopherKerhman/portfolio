@@ -13,7 +13,7 @@ class AffichagePage {
       include 'affichages/error.php';
     } else {
       //Debug mode Mode débug On = true Mode debug off = false
-      $debug = true;
+      $debug = false;
       if($debug) {
         echo $data[0]['cheminNav'];
       }
